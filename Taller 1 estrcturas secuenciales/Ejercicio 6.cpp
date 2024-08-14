@@ -16,7 +16,8 @@ int main() {
     salud = sal * 0.04;
     
     cout << "El aporte a salud es: " << salud << endl;
-    cout << "Se le descuenta para la pensión: " << pen << endl;
+    cout << "Se le descuenta para la pensiÃ³n: " << pen << endl;
+    cout << "Neto a pagar: " << pen + salud;
 
     return 0;
 }
