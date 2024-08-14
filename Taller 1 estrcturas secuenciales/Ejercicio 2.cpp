@@ -1,15 +1,22 @@
 #include <iostream>
-#include <cmath> // Necesario para  la funci髇 pow
+#include <cmath> // Necesario para  la funci贸n pow
 using namespace std;
-
+/*
+2-. Descripci贸n: Dado el radio de una circunferencia se pide calcular e imprimir su 谩rea
+           脕rea = pi * r ^ (2)
+    Elaborado por: Juan Pablo Mar铆n M.
+    Versi贸n del compilador: 5.11 (Dev-cpp)
+    Versi贸n del c贸digo: 1.0
+    
+*/
 int main() {
     float r,area;
     double pi = 3.141592653589793;
-    cout << "Digite un n鷐ero para el radio: ";
+    cout << "Digite un n煤mero para el radio: ";
     cin >> r;
     area = pow((pi * r),2);
 	
-    cout << "羠ea: " << area << endl;
+    cout << "脕rea: " << area << endl;
     
 
     return 0;
