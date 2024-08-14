@@ -1,7 +1,16 @@
 #include <iostream>
-#include <cmath> // Necesario para  la funci髇 pow
+#include <cmath> // Necesario para  la funci贸n pow
 using namespace std;
+/*
+3-. Descripci贸n: Dada la temperatura en grados Fahrenheit (f) 
+convertirla a grados cent铆grados (c) y viceversa 
+           c =  5/9 * (f-32)
 
+    Elaborado por: Juan Pablo Mar铆n M.
+    Versi贸n del compilador: 5.11 (Dev-cpp)
+    Versi贸n del c贸digo: 1.0
+    
+*/
 int main() {
     float fa, ce;
     
