@@ -1,20 +1,26 @@
 #include <iostream>
-#include <cmath> // Necesario para  la funci髇 pow
+#include <cmath> // Necesario para  la funci贸n pow
 using namespace std;
-
+/*
+    1-. Descripci贸n: Calcular y mostrar la suma, resta, multiplicaci贸n, divisi贸n, potencia de dos n煤meros
+    Elaborado por: Juan Pablo Mar铆n M.
+    Versi贸n del compilador: 5.11 (Dev-cpp)
+    Versi贸n del c贸digo: 1.0
+    
+*/
 int main() {
     float a, b;
     
-    cout << "Digite un n鷐ero para a: ";
+    cout << "Digite un n煤mero para a: ";
     cin >> a;
     
-    cout << "Digite un n鷐ero para b: ";
+    cout << "Digite un n煤mero para b: ";
     cin >> b;
 
     cout << "Suma: " << a + b << endl;
     cout << "Resta: " << a - b << endl;
-    cout << "Multiplicaci髇: " << a * b << endl;
-    cout << "Divisi髇: " << a / b << endl;
+    cout << "Multiplicaci贸n: " << a * b << endl;
+    cout << "Divisi贸n: " << a / b << endl;
     cout << "Potencia: " << pow(a, b) << endl;
 
     return 0;
