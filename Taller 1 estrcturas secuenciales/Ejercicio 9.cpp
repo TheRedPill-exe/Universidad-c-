@@ -10,9 +10,9 @@ int main() {
 	cout << "Digite los euros: ";
     cin >> euros;
     
-    cout << "Valor en pesos: " << euros * 4449,47 << endl;
+    cout << "Valor en pesos: " << euros * 4449.47 << endl;
 
-    cout << "Valor en dólares: " << euros * 1.10;
+    cout << "Valor en dÃ³lares: " << euros * 1.10;
 
 
 }
