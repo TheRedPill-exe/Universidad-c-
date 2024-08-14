@@ -26,7 +26,7 @@ int main() {
     float sal = (horas * vhora) + (horase * (vhora + (0.35 * vhora)));
 
     
-    cout << "El salario total del trabajador es: " << sal << endl << " y el valor de las horas extra es: " << (horase * (vhora + (0.35 * vhora)));
+    cout << "El salario total del trabajador es: " << sal << " y el valor de las horas extra es: " << (horase * (vhora + (0.35 * vhora)));
 
     return 0;
 }
