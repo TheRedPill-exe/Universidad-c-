@@ -222,3 +222,14 @@ int main() {
             cout << "Digite un número entero: ";
             cin >> num;
             if (esPar(num))
+cout << "El número es par." << endl;
+            else
+                cout << "El número es impar." << endl;
+            break;
+        }
+        default:
+            cout << "Opción no válida." << endl;
+    }
+
+    return 0;
+}
