@@ -71,19 +71,37 @@ void bubbleSort(int* arr, int size) {
 3-. Sea A una matriz de tamaño nxn, implemente un programa que dado un menú de opciones resuelva:  por ejemplo La transpuesta de A (At). Si A es simétrica.  
 Mostrar los elementos triangular superior o triangular inferior. O otras tres situaciones que se quieran realizar con matrices, con uso de punteros.
 */
-void matrix(){
-	
+void mkMatrix() {
+    int n = 0;
+    cout << "Digite el tamaño n de la matriz cuadrada: ";
+    cin >> n;
+
+    int** matrix = new int*[n];
+    for (int i = 0; i < n; ++i) {
+        matrix[i] = new int[n];
+        for (int j = 0; j < n; j++) {
+            cout << "Dato de fila " << i << " columna " << j << ": ";
+            cin >> *(*(matrix + i) + j);
+        }
+    }
+     cout << "La matriz es:" << endl;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; j++) {
+            cout << *(*(matrix + i) + j) << " ";
+        }
+        cout << endl;
+    }
+
+    // Liberar la memoria
+    for (int i = 0; i < n; ++i) {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
 }
 int main(){
 	//calificaciones();
-	
-	int arr[] = {10, 7, 8, 9, 1, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    //bubbleSort(arr, size);
 
-    bubbleSort(arr, size);
-
-    for (int i = 0; i < size; i++)
-        cout << arr[i] << " ";
-    cout << endl;
+    mkMatrix();
 	return 0;
 }
